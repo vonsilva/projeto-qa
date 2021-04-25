@@ -21,34 +21,37 @@ class LoginPage {
     }
 
     clicarLogin() {
-      cy.screenshot()
+      // cy.screenshot()
         cy.get(loginElements.botaoLogin())
           .click()
     }
 
     // As próximas 4 funções verificam mensagens de erro na tela de login
     verificarErroLoginBloqueado() {
-      cy.screenshot()
+      // cy.screenshot()
       cy.get(loginElements.mensagemErro())
         .should('have.text', 'Epic sadface: Sorry, this user has been locked out.')
     }
 
     verificarErroLoginUsuario() {
-      cy.screenshot()
+      // cy.screenshot()
       cy.get(loginElements.mensagemErro())
         .should('have.text', 'Epic sadface: Username is required')
     }
 
     verificarErroLoginSenha() {
-      cy.screenshot()
+      // cy.screenshot()
       cy.get(loginElements.mensagemErro())
         .should('have.text', 'Epic sadface: Password is required')
     }
 
-    // TODO função para erro quando usuario e senha incorretos
+    verificarErroLoginFalso() {
+      cy.get(loginElements.mensagemErro())
+        .should('have.text', 'Epic sadface: Username and password do not match any user in this service')
+    }
 
     verificarSeLogado() {
-      cy.screenshot()
+      // cy.screenshot()
       cy.url()
         .should('eq', 'https://www.saucedemo.com/inventory.html')
     }

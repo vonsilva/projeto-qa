@@ -7,14 +7,6 @@ Given("que eu estou na tela de login", () => {
     loginPage.acessarSite();
 })
 
-Then("deve haver um erro de usuario obrigatorio", () => {
-    loginPage.verificarErroLoginUsuario();
-})
-
-Then("deve haver um erro de senha obrigatorio", () => {
-    loginPage.verificarErroLoginSenha();
-})
-
 When("eu insiro um usuario {string} e senha {string}", (usuario, senha) => {
     loginPage.inserirDadosLogin(usuario, senha);
 })
@@ -29,6 +21,18 @@ Then("deve haver um erro de usuario bloqueado", () => {
 
 Then("devo estar logado", () => {
     loginPage.verificarSeLogado();
+})
+
+Then("deve haver um erro de usuario obrigatorio", () => {
+    loginPage.verificarErroLoginUsuario();
+})
+
+Then("deve haver um erro de senha obrigatorio", () => {
+    loginPage.verificarErroLoginSenha();
+})
+
+Then("deve haver um erro de usuario inexistente", () => {
+    loginPage.verificarErroLoginFalso();
 })
 
 
