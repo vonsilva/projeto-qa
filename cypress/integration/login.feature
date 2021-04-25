@@ -8,7 +8,7 @@ Feature: Tela de Login
         And clico em login
         Then deve haver um erro de senha obrigatorio
 
-    Scenario: Login inexistente
+    Scenario: Login Inexistente
         Given que eu estou na tela de login
         When eu insiro um usuario 'teste' e senha '1234'
         And clico em login
@@ -19,7 +19,6 @@ Feature: Tela de Login
         When eu insiro um usuario 'locked_out_user' e senha 'secret_sauce'
         And clico em login
         Then deve haver um erro de usuario bloqueado
-
 
     Scenario: Login com Sucesso
         Given que eu estou na tela de login

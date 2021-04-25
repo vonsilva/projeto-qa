@@ -1,0 +1,1 @@
+Feature: Realizar Checkout
