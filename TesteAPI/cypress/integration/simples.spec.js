@@ -1,5 +1,5 @@
 describe('Usuário', () => {
-    it('Criar usuário', () => {
+    it('Criando usuário', () => {
         cy.request({
             url: '/user',
             method: 'POST',
@@ -19,18 +19,59 @@ describe('Usuário', () => {
         })
     })
 
-    it('Recuperar usuário', () => {
+    it('Criando mais de 1 usuário', () => {
         cy.request({
-            url: '/user/maria',
+            url: '/user/createWithArray',
+            method: 'POST',
+            headers: {api_key: `test`},
+            body: [{
+                id: 0,
+                username: "lineu12",
+                firstName: "Lineu",
+                lastName: "Silva",
+                email: "lineu@email.com",
+                password: "abc123",
+                phone: "11997015621",
+                userStatus: 1
+            },
+            {
+                id: 0,
+                username: "agostinho.taxi",
+                firstName: "Agostinho",
+                lastName: "Carrara",
+                email: "agostinho@carrarataxi.com",
+                password: "abc123",
+                phone: "11988756522",
+                userStatus: 1
+            },
+            {
+                id: 0,
+                username: "mendonca5",
+                firstName: "Mendonça",
+                lastName: "Pereira",
+                email: "mendonca@email.com",
+                password: "abc123",
+                phone: "11988756523",
+                userStatus: 1
+            }]
+        }).then(res => {
+            expect(res.status).to.be.equal(200)
+        })
+    })
+
+    it('Recuperando usuário', () => {
+        cy.request({
+            url: '/user/agostinho.taxi',
             method: 'GET',
             headers: {api_key: `test`},
             body: {
             }
         }).then(res => {
-            expect(res.body.firstName).to.be.equal('Maria')
-            expect(res.body.lastName).to.be.equal('Assunção')
-            expect(res.body.email).to.be.equal('maria.assuncao@email.com')
-            expect(res.body.phone).to.be.equal('11988756521')
+            expect(res.body.username).to.be.equal("agostinho.taxi")
+            expect(res.body.firstName).to.be.equal('Agostinho')
+            expect(res.body.lastName).to.be.equal('Carrara')
+            expect(res.body.email).to.be.equal('agostinho@carrarataxi.com')
+            expect(res.body.phone).to.be.equal('11988756522')
             expect(res.body.userStatus).to.be.equal(1)
         })
     })
@@ -57,7 +98,7 @@ describe('Usuário', () => {
 
     it('Verificandoatualização', () => {
         cy.request({
-            url: '/user/maria',
+            url: '/user/maris2',
             method: 'GET',
             headers: {api_key: `test`},
             body: {
@@ -75,7 +116,7 @@ describe('Usuário', () => {
 
 describe('Pet', () => {
 
-    it('Criar pet', () => {
+    it('Criando pet', () => {
         cy.request({
             url: '/pet',
             method: 'POST',
@@ -93,7 +134,7 @@ describe('Pet', () => {
                 "tags": [
                   {
                     "id": 0,
-                    "name": "sring"
+                    "name": "Pet"
                   }
                 ],
                 "status": "available"
@@ -103,7 +144,71 @@ describe('Pet', () => {
         })
     })
 
-    it('Recuperar pet', () => {
+    it('Criando mais de 1 pet', () => {
+        cy.request({
+            url: '/pet/createWithArray',
+            method: 'POST',
+            headers: {api_key: `test`},
+            body: [{
+                "id": 9217389210,
+                "category": {
+                  "id": 0,
+                  "name": "Dog"
+                },
+                "name": "Rex",
+                "photoUrls": [
+                  ""
+                ],
+                "tags": [
+                  {
+                    "id": 0,
+                    "name": "Pet"
+                  }
+                ],
+                "status": "available"
+              },
+              {
+                "id": 9217389211,
+                "category": {
+                  "id": 1,
+                  "name": "Cat"
+                },
+                "name": "Miau",
+                "photoUrls": [
+                  ""
+                ],
+                "tags": [
+                  {
+                    "id": 0,
+                    "name": "Pet"
+                  }
+                ],
+                "status": "available"
+              },
+              {
+                "id": 9217389212,
+                "category": {
+                  "id": 1,
+                  "name": "Cat"
+                },
+                "name": "Garfield",
+                "photoUrls": [
+                  ""
+                ],
+                "tags": [
+                  {
+                    "id": 0,
+                    "name": "Pet"
+                  }
+                ],
+                "status": "available"
+              }]
+        }).then(res => {
+            expect(res.status).to.be.equal(200)
+        })
+    })
+
+    it('Recuperando pet', () => {
         cy.request({
             url: '/pet/9217389299',
             method: 'GET',
@@ -112,6 +217,7 @@ describe('Pet', () => {
             }
         }).then(res => {
             expect(res.body.category.name).to.be.equal('Dog')
+            expect(res.body.tags[0].name).to.be.equal('Pet')
             expect(res.body.name).to.be.equal('Brutus')
             expect(res.body.status).to.be.equal('available')
         })
@@ -134,8 +240,8 @@ describe('Pet', () => {
                 ],
                 "tags": [
                   {
-                    "id": 0,
-                    "name": "sring"
+                    "id": 3,
+                    "name": "Fish"
                   }
                 ],
                 "status": "not available"
@@ -154,18 +260,18 @@ describe('Pet', () => {
             }
         }).then(res => {
             expect(res.body.category.name).to.be.equal('Cat')
+            expect(res.body.tags[0].name).to.be.equal('Fish')
             expect(res.body.name).to.be.equal('Max')
             expect(res.body.status).to.be.equal('not available')
         })
     })
 })
 
-
 describe('Pedido', () => {
 
     const dataVenda = Date.now()
 
-    it('Criar pedido', () => {
+    it('Criando pedido', () => {
         cy.request({
             url: '/pet',
             method: 'POST',
@@ -185,7 +291,7 @@ describe('Pedido', () => {
         })
     })
 
-    it('Recuperar pedido', () => {
+    it('Recuperando pedido', () => {
         cy.request({
             url: '/store/order/9103782362892',
             method: 'GET',

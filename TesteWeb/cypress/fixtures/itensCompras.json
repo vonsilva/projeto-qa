@@ -1,0 +1,43 @@
+{
+    "produtos": {
+        "1": {
+            "id": "4",
+            "nome": "Sauce Labs Backpack",
+            "valor": "$29.99",
+            "descricao": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.",
+            "imagem": "/static/media/sauce-backpack-1200x1500.34e7aa42.jpg"
+        },
+
+        "2": {
+            "id": "0",
+            "nome": "Sauce Labs Bike Light",
+            "valor": "$9.99",
+            "descricao": "A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.",
+            "imagem": "/static/media/bike-light-1200x1500.a0c9caae.jpg"
+        },
+
+        "3": {
+            "id": "1",
+            "nome": "Sauce Labs Bolt T-Shirt",
+            "valor": "$15.99",
+            "descricao": "Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.",
+            "imagem": "/static/media/bolt-shirt-1200x1500.c0dae290.jpg"
+        },
+
+        "4": {
+            "id": "5",
+            "nome": "Sauce Labs Fleece Jacket",
+            "valor": "$49.99",
+            "descricao": "It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.",
+            "imagem": "/static/media/sauce-pullover-1200x1500.439fc934.jpg"
+        },
+
+        "5": {
+            "id": "2",
+            "nome": "Sauce Labs Onesie",
+            "valor": "$7.99",
+            "descricao": "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.",
+            "imagem": "/static/media/red-onesie-1200x1500.1b15e1fa.jpg"
+        }
+    }
+}
