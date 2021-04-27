@@ -1,6 +1,6 @@
 # Testes Automatizados Cypress
 
-### Alguns exemplos de testes automatizados utilizando o framework cypress para demonstrar minhas habilidades em automação.
+### Alguns exemplos de testes automatizados utilizando o framework cypress para demonstrar minhas habilidades com automação.
 
 
 ### ✨ Features
@@ -12,7 +12,7 @@
 
 
 <h4 align="center"> 
-	🚧  Projeto em melhoria contínua conforme evoluo na automação...  🚧<br>
+	🚧  Projeto em melhoria contínua conforme evoluo com automação...  🚧<br>
 </h4><br>
 
 
@@ -26,7 +26,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/vonsilva/Teste-QA-Itau-Unibanco.git>
+$ git clone <https://github.com/vonsilva/projeto-qa.git>
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd TesteAPI
@@ -42,7 +42,7 @@ $ npm install --save-dev cypress cypress-cucumber-preprocessor
 # Execute o cypress
 $ npx cypress open
 
-# Uma aba do cypress abrira em instantes... Enjoy ;D
+# Uma aba do cypress abrirá em instantes... Enjoy ;D
 ```
 
 
@@ -66,12 +66,12 @@ As seguintes ferramentas foram usadas na construção do projeto:
 Feito com ❤️ por João Victor 👋🏽 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-João-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/joao-alves-silva/)](https://www.linkedin.com/in/joao-alves-silva/) 
-[![Apple Badge](https://img.shields.io/badge/-alves.joao978@icloud.com-gray?style=flat-square&logo=Apple&logoColor=white&link=mailto:alves.joao978@icloud.com)](mailto:tgmarinho@gmail.com)<br>
+[![Apple Badge](https://img.shields.io/badge/-alves.joao978@icloud.com-gray?style=flat-square&logo=Apple&logoColor=white&link=mailto:alves.joao978@icloud.com)](mailto:alves.joao978@icloud)<br>
 
 
 ### 🤝 Contribuição
 
-Se tiver alguma sugestão ou crítica por favor me mande no meu linkedin ou e-mail, se você estiver aprendendo assim como eu, espero que esse repositório te auxilie na sua caminhada.
+Se tiver alguma sugestão ou crítica por favor me mande no meu linkedin ou e-mail, se você estiver aprendendo assim como eu, espero que esse repositório te auxilie na sua caminhada de estudos.
 
 "Transmitir conhecimento não é apenas falar o que sabe, mas inspirar novas atitudes" -- Juliano Kimura
 
