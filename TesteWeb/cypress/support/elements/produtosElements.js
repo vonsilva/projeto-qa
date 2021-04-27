@@ -3,7 +3,6 @@ class ProdutosElements {
     botaoRemoveCarrinho = (produto) => { return '[data-test=remove-'+produto.toLowerCase().replace(/\s/g, '-')+']' }
     botaoAdicionaCarrinho = (produto) => { return '[data-test=add-to-cart-'+produto.toLowerCase().replace(/\s/g, '-')+']' }
 
-
     listaProdutos = (id) => { return '.inventory_list > :nth-child('+id+')' }
     produto = (id) => { return '#item_'+id+'_title_link > .inventory_item_name' }
     precoProduto = (id) => { return ':nth-child('+id+') > .inventory_item_description > .pricebar > .inventory_item_price' }
