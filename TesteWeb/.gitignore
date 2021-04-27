@@ -7,3 +7,4 @@ cypress/logs
 .history
 .vscode
 env
+package-lock.json
