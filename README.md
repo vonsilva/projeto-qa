@@ -60,9 +60,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <a href="">
  <img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4E03AQGvq8scrFRDnA/profile-displayphoto-shrink_200_200/0/1589585121171?e=1625097600&v=beta&t=_BYqIqwAQ1V7ncW2P_nDo40WZSdyP5jcQ_jyM2tbd3I" width="100px;" alt=""/>
- <a/>
- <b>João Victor - Analista de QA</b><br>
-
+ <a/><br>
+<b>João Victor - Analista de QA</b><br>
+	
 Feito com ❤️ por João Victor 👋🏽 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-João-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/joao-alves-silva/)](https://www.linkedin.com/in/joao-alves-silva/) 
