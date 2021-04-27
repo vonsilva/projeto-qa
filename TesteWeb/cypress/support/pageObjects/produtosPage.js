@@ -5,26 +5,29 @@ const produtosElements = new ProdutosElements
 
 class ProdutosPage {
   validarTelaProdutos() {
-      cy.fixture('itensCompras').then((item) => {
+    cy.screenshot()
+    cy.fixture('itensCompras').then((item) => {
 
-          for (var i in item.produtos) {
+        for (var i in item.produtos) {
 
-            cy.get(produtosElements.imagemProduto(item.produtos[i].id))
-              .should('have.attr', 'src', item.produtos[i].imagem)
+          cy.get(produtosElements.imagemProduto(item.produtos[i].id))
+            .should('have.attr', 'src', item.produtos[i].imagem)
 
 
-            cy.get(produtosElements.listaProdutos(i))
-              .find(produtosElements.produto(item.produtos[i].id))
-              .should('have.text', item.produtos[i].nome)
+          cy.get(produtosElements.listaProdutos(i))
+            .find(produtosElements.produto(item.produtos[i].id))
+            .should('have.text', item.produtos[i].nome)
 
-            cy.get(produtosElements.descricaoProduto(i))
-              .should('have.text', item.produtos[i].descricao)
+          cy.get(produtosElements.descricaoProduto(i))
+            .should('have.text', item.produtos[i].descricao)
 
-            cy.get(produtosElements.precoProduto(i))
-              .should('have.text', item.produtos[i].valor)
-            }
+          cy.get(produtosElements.precoProduto(i))
+            .should('have.text', item.produtos[i].valor)
+          }
 
-      })
+    })
+
+      
   }
 
   adicionarAoCarrinho() {
@@ -66,6 +69,8 @@ class ProdutosPage {
       }
 
     })
+
+    cy.screenshot()
   }
 
   verificarBotaoRemover() {
@@ -79,6 +84,8 @@ class ProdutosPage {
       }
 
     })
+
+    cy.screenshot()
   }
 
   acessarCarrinho() {
@@ -121,6 +128,8 @@ class ProdutosPage {
       }
 
     })
+
+    cy.screenshot()
   }
 
 }
