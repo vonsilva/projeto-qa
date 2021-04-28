@@ -69,9 +69,6 @@ Feito com ❤️ por João Victor 👋🏽 Entre em contato!
 
 [![Apple Badge](https://img.shields.io/badge/-alves.joao978@icloud.com-gray?style=flat-square&logo=Apple&logoColor=white&link=mailto:alves.joao978@icloud.com)](mailto:alves.joao978@icloud)<br>
 
-=======
-[![Apple Badge](https://img.shields.io/badge/-alves.joao978@icloud.com-gray?style=flat-square&logo=Apple&logoColor=white&link=mailto:alves.joao978@icloud.com)](alves.joao978@icloud.com)<br>
->>>>>>> b484440d78627a2b796d3f5fc88a6c316be76c39
 
 ### 🤝 Contribuição
 ---
