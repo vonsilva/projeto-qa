@@ -65,9 +65,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 	
 Feito com ❤️ por João Victor 👋🏽 Entre em contato!
 
-[![Linkedin Badge](https://img.shields.io/badge/-João-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/joao-alves-silva/)](https://www.linkedin.com/in/joao-alves-silva/) 
+[![Linkedin Badge](https://img.shields.io/badge/-João-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/joao-alves-silva/)](https://www.linkedin.com/in/joao-alves-silva/) [![Apple Badge](https://img.shields.io/badge/-alves.joao978@icloud.com-gray?style=flat-square&logo=Apple&logoColor=white&link=mailto:alves.joao978@icloud.com)](alves.joao978@icloud)
 
-[![Apple Badge](https://img.shields.io/badge/-alves.joao978@icloud.com-gray?style=flat-square&logo=Apple&logoColor=white&link=mailto:alves.joao978@icloud.com)](mailto:alves.joao978@icloud)<br>
+<br>
 
 
 ### 🤝 Contribuição
